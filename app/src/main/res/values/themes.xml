@@ -2,4 +2,8 @@
 <resources>
 
     <style name="Theme.Health4U_v1" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="CustomToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
 </resources>
