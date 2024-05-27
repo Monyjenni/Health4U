@@ -52,14 +52,22 @@ Exercise Schedule & Notification
 
 
 
-<img width="481" alt="Screenshot 2024-05-27 at 8 16 28 in the evening" src="https://github.com/Monyjenni/Health4U/assets/51309276/3fbab876-dd90-4bc4-82ed-d2efb0be0e32">
+
+<img width="406" alt="Screenshot 2024-05-27 at 8 45 47 in the evening" src="https://github.com/Monyjenni/Health4U/assets/51309276/fb385c7b-9a17-44e1-b61d-22374f09399b">
 
 
 
-<img width="479" alt="Screenshot 2024-05-27 at 8 16 34 in the evening" src="https://github.com/Monyjenni/Health4U/assets/51309276/995b03fd-23c3-4f2d-8e3c-b1ccd5264b90">
+
+<img width="422" alt="Screenshot 2024-05-27 at 8 45 42 in the evening" src="https://github.com/Monyjenni/Health4U/assets/51309276/91e21858-8468-4b59-8f25-bdb0c284e3c6">
 
 
-<img width="478" alt="Screenshot 2024-05-27 at 8 16 42 in the evening" src="https://github.com/Monyjenni/Health4U/assets/51309276/77866959-ffe3-4622-a763-e18b737f8d44">
+
+
+<img width="478" alt="Screenshot 2024-05-27 at 8 16 42 in the evening" src="https://github.com/Monyjenni/Health4U/assets/51309276/3b0df9ff-4e8a-4741-a9e3-453361772da7">
+
+
+
+
 
 
 
