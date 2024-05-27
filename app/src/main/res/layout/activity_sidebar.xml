@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/img"
                 android:layout_centerInParent="true"
-                android:text="Neath Neath"
+                android:text="Jcennie"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -81,7 +81,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="72dp"
                 android:layout_marginBottom="10dp"
-                android:text="Sothea Monineath"
+                android:text="Chansovanmony Yoeun"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -131,7 +131,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:text="06-July-2003"
+                android:text="XX-XX-2003"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -236,7 +236,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginBottom="10dp"
-                android:text="51kg"
+                android:text="53kg"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
             <ImageView

@@ -48,7 +48,6 @@ class SignupActivity : AppCompatActivity() {
         val confirmPassword = confirmPasswordInput.text.toString().trim()
 
         if (validateInput(email, username, password, confirmPassword)) {
-            // Save username and password to sharedPreferences
             sharedPreferences.edit().putString("username", username).apply()
             sharedPreferences.edit().putString("password", password).apply()
 
