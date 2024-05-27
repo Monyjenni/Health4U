@@ -15,4 +15,8 @@ class DishPreview : AppCompatActivity() {
         val intent = Intent(this, DishDetail::class.java)
         startActivity(intent)
     }
+    fun navigateBackToDashboard(view: View) {
+        val intent = Intent(this, dashboard_screen::class.java)
+        startActivity(intent)
+    }
 }

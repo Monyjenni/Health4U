@@ -14,5 +14,10 @@ class workout_page1 : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun navigateBackToDashboard(view: View) {
+        val intent = Intent(this, dashboard_screen::class.java)
+        startActivity(intent)
+    }
+
 
 }
