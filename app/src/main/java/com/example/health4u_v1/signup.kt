@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class SignupActivity : AppCompatActivity() {
+    private lateinit var sharedPreferences: SharedPreferences
     private lateinit var emailInput: EditText
     private lateinit var usernameInput: EditText
     private lateinit var passwordInput: EditText
@@ -21,12 +22,13 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
+        sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE)
         emailInput = findViewById(R.id.email_input)
         usernameInput = findViewById(R.id.username_input)
         passwordInput = findViewById(R.id.password_input)
         confirmPasswordInput = findViewById(R.id.confirm_password_input)
         signUpButton = findViewById(R.id.sign_up)
-        loginNowTextView = findViewById(R.id.login_now)  // Correct ID reference
+        loginNowTextView = findViewById(R.id.login_now)
 
         signUpButton.setOnClickListener {
             handleSignUp()
@@ -46,6 +48,10 @@ class SignupActivity : AppCompatActivity() {
         val confirmPassword = confirmPasswordInput.text.toString().trim()
 
         if (validateInput(email, username, password, confirmPassword)) {
+            // Save username and password to sharedPreferences
+            sharedPreferences.edit().putString("username", username).apply()
+            sharedPreferences.edit().putString("password", password).apply()
+
             Toast.makeText(this, "Sign-up successful!", Toast.LENGTH_LONG).show()
         }
     }

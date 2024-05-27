@@ -32,7 +32,8 @@ class Login : AppCompatActivity() {
 
             if (username == savedUsername && password == savedPassword) {
                 Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
-                // Navigate to the main activity or dashboard
+                val intent = Intent(this, dashboard_screen::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
             }
