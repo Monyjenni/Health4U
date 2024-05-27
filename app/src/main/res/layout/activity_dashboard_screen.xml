@@ -106,14 +106,16 @@
                 android:layout_height="30dp"
                 android:text="Workout Plans"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="500dp"
                 android:layout_height="198dp"
                 android:layout_marginTop="10dp"
-                app:srcCompat="@drawable/pic2" />
+                app:srcCompat="@drawable/pic2"
+                android:onClick="onWorkoutPlansClicked"/>
 
             <TextView
                 android:id="@+id/textView6"
@@ -121,14 +123,16 @@
                 android:layout_height="30dp"
                 android:text="Diet Plans"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
                 android:layout_marginTop="10dp"
-                app:srcCompat="@drawable/pic3" />
+                app:srcCompat="@drawable/pic3"
+                android:onClick="onDietPlansClicked"/>
         </LinearLayout>
     </ScrollView>
 

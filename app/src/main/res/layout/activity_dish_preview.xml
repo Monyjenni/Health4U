@@ -103,7 +103,8 @@
                         android:id="@+id/imageView5"
                         android:layout_width="390dp"
                         android:layout_height="200dp"
-                        app:srcCompat="@drawable/japan_rice"/>
+                        app:srcCompat="@drawable/japan_rice"
+                        />
                     <TextView
                         android:id="@+id/textView10"
                         android:layout_width="match_parent"

@@ -1,17 +1,18 @@
 package com.example.health4u_v1
-
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.content.Intent
 import android.view.View
-class workout_detail : AppCompatActivity() {
+class workout_page1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_workout_detail)
+        setContentView(R.layout.activity_workout_page1)
     }
 
-    private fun navigateBackToWorkoutPreview(view: View) {
-        val intent = Intent(this, DishPreview::class.java)
+    fun navigateToWorkoutPreview(view: View) {
+        val intent = Intent(this, workout_preview::class.java)
         startActivity(intent)
     }
+
+
 }
