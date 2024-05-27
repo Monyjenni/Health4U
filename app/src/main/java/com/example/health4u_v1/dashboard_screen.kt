@@ -22,4 +22,8 @@ class dashboard_screen : AppCompatActivity() {
         val intent = Intent(this, DishPreview::class.java)
         startActivity(intent)
     }
+    fun onPfSetting(view: View) {
+        val intent = Intent(this, activity_setting::class.java)
+        startActivity(intent)
+    }
 }

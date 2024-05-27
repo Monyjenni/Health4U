@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_sidebar">
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
@@ -40,7 +38,9 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="5dp"
-                android:src="@drawable/arrowback" />
+                android:src="@drawable/arrowback"
+                android:onClick="userSetting"
+                />
 
             <ImageView
                 android:layout_width="35dp"
@@ -54,8 +54,10 @@
         <RelativeLayout
             android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="750dp"
             android:layout_below="@+id/Layout1"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
             android:paddingLeft="16dp">
 
             <TextView
@@ -77,7 +79,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="72dp"
                 android:layout_marginBottom="10dp"
                 android:text="Sothea Monineath"
                 android:textColor="@color/black"
@@ -229,29 +231,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="24dp"
                 android:layout_marginBottom="10dp"
                 android:text="51kg"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
         </RelativeLayout>
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="200dp"
-            android:layout_height="80dp"
-            android:layout_below="@+id/relativeLayout"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="106dp"
-            android:layout_marginTop="-22dp"
-            android:layout_marginEnd="105dp"
-            android:layout_marginBottom="53dp"
-            app:srcCompat="@drawable/logo" />
 
     </RelativeLayout>
 

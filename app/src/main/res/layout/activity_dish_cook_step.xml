@@ -20,7 +20,7 @@
             android:theme="@style/CustomToolbarTheme"
             app:contentScrim="@color/black"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
-            app:title="Meal name">
+            app:title="Western">
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -79,9 +79,11 @@
         android:id="@+id/button"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Back"
+        android:text="Home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="683dp" />
+        tools:layout_editor_absoluteY="683dp"
+        android:onClick="navigateBackToDashboard"
+        />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

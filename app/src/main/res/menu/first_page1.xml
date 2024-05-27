@@ -1,0 +1,24 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+    <item
+        android:id="@+id/yoga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Breakfast"/>
+    <item
+        android:id="@+id/gym"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Lunch"/>
+    <item
+        android:id="@+id/cardio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Dinner"/>
+    <item
+        android:id="@+id/stretch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Dessert"/>
+</menu>

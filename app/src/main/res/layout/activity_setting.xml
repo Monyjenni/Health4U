@@ -39,7 +39,9 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="5dp"
-                android:src="@drawable/arrowback" />
+                android:src="@drawable/arrowback"
+                android:onClick="navigateBackToDashboard"
+                />
 
             <ImageView
                 android:layout_width="35dp"
@@ -53,9 +55,11 @@
         <RelativeLayout
             android:id="@+id/relativeLayout2"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="750dp"
             android:layout_below="@+id/Layout1"
-            android:paddingLeft="16dp">
+            android:paddingLeft="16dp"
+            android:background="@color/white"
+            >
 
             <TextView
                 android:id="@+id/major"
@@ -67,7 +71,9 @@
                 android:layout_marginBottom="10dp"
                 android:text="Profile"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:onClick="onSideBar"
+                />
 
             <TextView
                 android:id="@+id/gender"
@@ -132,24 +138,7 @@
                 android:text="Sign Out"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-
-
         </RelativeLayout>
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:layout_below="@+id/relativeLayout2"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="106dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="105dp"
-            android:layout_marginBottom="22dp"
-            app:srcCompat="@drawable/logo" />
-
     </RelativeLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

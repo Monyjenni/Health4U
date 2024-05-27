@@ -33,7 +33,10 @@
                     app:srcCompat="@drawable/logo" />
 
             </LinearLayout>
-
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
@@ -43,9 +46,18 @@
                 android:text="Hello, Welcome!"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/user_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/user"
+                android:onClick="onPfSetting"
+                />
+            </RelativeLayout>
             <SearchView
                 android:layout_width="400dp"
                 android:layout_height="40dp"
@@ -111,8 +123,8 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="500dp"
-                android:layout_height="198dp"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
                 android:layout_marginTop="10dp"
                 app:srcCompat="@drawable/pic2"
                 android:onClick="onWorkoutPlansClicked"/>
