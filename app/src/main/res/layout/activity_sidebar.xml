@@ -173,7 +173,9 @@
                 android:layout_marginBottom="10dp"
                 android:text="BMI"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:onClick="navigateToBMI"
+                />
 
             <TextView
                 android:id="@+id/email1"
