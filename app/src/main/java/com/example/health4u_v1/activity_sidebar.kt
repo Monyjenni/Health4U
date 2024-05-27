@@ -14,4 +14,8 @@ class activity_sidebar : AppCompatActivity() {
         val intent = Intent(this, dashboard_screen::class.java)
         startActivity(intent)
     }
+    fun navigateToBMI(view: View) {
+        val intent = Intent(this, bmi_result::class.java)
+        startActivity(intent)
+    }
 }

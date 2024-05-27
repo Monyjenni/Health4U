@@ -59,7 +59,9 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/yt_icon"
         app:layout_anchor="@+id/appBar"
-        app:layout_anchorGravity="center" />
+        app:layout_anchorGravity="center"
+        android:onClick="openYouTubeVideo"
+        />
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
