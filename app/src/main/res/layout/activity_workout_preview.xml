@@ -28,7 +28,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:padding="8dp"
-                    app:srcCompat="@drawable/arrowback"
+                    app:srcCompat="@drawable/baseline_arrow_back_24"
                     android:onClick="navigateBackToDashboard"
                     />
                 <TextView

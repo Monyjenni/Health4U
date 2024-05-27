@@ -237,8 +237,21 @@
                 android:text="51kg"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="106dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginBottom="22dp"
+                app:srcCompat="@drawable/health4" />
 
         </RelativeLayout>
+
 
     </RelativeLayout>
 

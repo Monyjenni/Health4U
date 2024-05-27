@@ -11,7 +11,7 @@ class activity_sidebar : AppCompatActivity() {
         setContentView(R.layout.activity_sidebar)
     }
     fun userSetting(view: View) {
-        val intent = Intent(this, activity_setting::class.java)
+        val intent = Intent(this, dashboard_screen::class.java)
         startActivity(intent)
     }
 }
