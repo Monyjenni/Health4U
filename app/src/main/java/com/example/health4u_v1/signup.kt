@@ -1,35 +1,41 @@
 package com.example.health4u_v1
+
+import android.content.Intent
+import android.content.SharedPreferences
+import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 
-class signup : AppCompatActivity() {
-
+class SignupActivity : AppCompatActivity() {
     private lateinit var emailInput: EditText
     private lateinit var usernameInput: EditText
     private lateinit var passwordInput: EditText
     private lateinit var confirmPasswordInput: EditText
     private lateinit var signUpButton: Button
-    private lateinit var registerNowTextView: TextView
+    private lateinit var loginNowTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
-
 
         emailInput = findViewById(R.id.email_input)
         usernameInput = findViewById(R.id.username_input)
         passwordInput = findViewById(R.id.password_input)
         confirmPasswordInput = findViewById(R.id.confirm_password_input)
         signUpButton = findViewById(R.id.sign_up)
-        registerNowTextView = findViewById(R.id.login)
-
+        loginNowTextView = findViewById(R.id.login_now)  // Correct ID reference
 
         signUpButton.setOnClickListener {
             handleSignUp()
+        }
+        
+        loginNowTextView.setOnClickListener {
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 
