@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"/>
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.health4u_v1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -11,64 +12,35 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Health4U_v1"
+        android:theme="@style/Theme.AppCompat"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <activity
-            android:name=".DishCookStep"
-            android:exported="false" />
-        <activity
-            android:name=".DishStep"
-            android:exported="false" />
-        <activity
-            android:name=".DishDetail"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".DishPreview"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".DishCategory"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".signup"
-            android:exported="false" />
-        <activity
-            android:name=".Login"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Health4U_v1">
+            android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity_sidebar" />
+        <activity android:name=".activity_setting" />
+        <activity android:name=".workout_detail" />
+        <activity android:name=".workout_page" />
+        <activity android:name=".dashboard_screen" />
+        <activity android:name=".workout_preview" />
+        <activity android:name=".bmi_result" />
+        <activity android:name=".DishDetail" />
+        <activity android:name=".DishCookingStep" />
+        <activity android:name=".DishPreview" />
+        <activity android:name=".DishCategory" />
+        <activity
+            android:name=".MainActivity"/>
+        <activity android:name=".Login" />
+
     </application>
 
 </manifest>
